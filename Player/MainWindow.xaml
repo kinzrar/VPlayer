@@ -1,0 +1,27 @@
+﻿<Window x:Class="Player.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Player"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="368" VerticalAlignment="Top" Width="770" Margin="10,-1,0,0" >
+            <MediaElement.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Play"></MenuItem>
+                    <MenuItem Header="Open"></MenuItem>
+                    <MenuItem Header="Pause"></MenuItem>
+                </ContextMenu>
+            </MediaElement.ContextMenu>
+
+
+        </MediaElement>
+
+
+        <Button Content="Open" HorizontalAlignment="Left" Margin="10,381,0,0" VerticalAlignment="Top" Height="38" Width="79" Click="Button_Click"/>
+        <Button Content="Open" HorizontalAlignment="Left" Margin="122,381,0,0" VerticalAlignment="Top" Height="38" Width="79" Click="Button_Click"/>
+
+    </Grid>
+</Window>
